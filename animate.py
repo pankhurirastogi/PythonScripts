@@ -19,11 +19,14 @@ class alien(object):
                          command=self.and1)
         self.button.pack(side=LEFT)
         self.canvas.pack()
+        self.label = Label(self.root, text="message", font='size, 20')
+        self.label.pack()
         #self.root.after(0, self.animation)
         self.root.mainloop()
 
      def and1(self):
-        os.system("D:\pankhupython\songg.mp3")  
+        self.label.config(text="new message")
+        #os.system("D:\pankhupython\songg.mp3")  
         
 
 
